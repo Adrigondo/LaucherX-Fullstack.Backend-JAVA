@@ -1,1 +1,1 @@
-# LaucherX-Fullstack.Backend-JAVA
+# LaucherX Fullstack: Backend with JAVA
