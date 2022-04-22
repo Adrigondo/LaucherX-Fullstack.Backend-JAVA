@@ -2,6 +2,11 @@ package Week1_04_04_22;
 
 public class Home {
     public static void main(String[] args) {
+        testKinderSurprise();
+        testSkwinkles();
+    }
+
+    public static void testKinderSurprise(){
         Toy trex = new Dinosaur(
                 "Tiranosaurio Rex azul",
                 5,
@@ -41,5 +46,31 @@ public class Home {
         kinder1.getToy().open();
         kinder1.getToy().assemble();
         kinder1.getToy().pasteStickers();
+    }
+
+    public static void testSkwinkles(){
+        Skwinkles skwinkles = new Skwinkles();
+        skwinkles.show();
+        System.out.println("\n");
+
+        skwinkles = new SkwinklesRellenos(
+                "Piña",
+                "Tamarindo"
+        );
+        skwinkles.show();
+        System.out.println("\n");
+
+        skwinkles = new Skwinklotes(
+                "Piña"
+        );
+        skwinkles.show();
+        System.out.println("\n");
+
+        skwinkles = new SkwinklesSalsaguetis(
+                "Tamarindo",
+                "Lucas"
+        );
+        skwinkles.show();
+        System.out.println("\n");
     }
 }
