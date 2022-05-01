@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="imonsh">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/Week2_11_04_22/Concert/imonsh.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
