@@ -9,7 +9,7 @@ public class JusticeToCat extends Mona{
         System.out.println(msg);
     }
     public void beFair(){
-        String msg=name+" está bailando ulalantemente. ";
+        String msg=name+" no necesita una función para ser justo, siempre lo es! ";
         System.out.println(msg);
     }
 }

@@ -13,7 +13,7 @@ public class SurfToCat extends Mona{
         System.out.println(msg);
     }
     public void swim(){
-        String msg=name+" está nada en el mar. ";
+        String msg=name+" está nadando en el mar. ";
         System.out.println(msg);
     }
 }
