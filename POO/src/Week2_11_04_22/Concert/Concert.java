@@ -29,7 +29,7 @@ public class Concert {
             music.play();
             while(it<=4){
                 it++;
-                changeBackgroundWithMusic(screen);
+                changeRenderWithMusic(screen);
             }
             System.out.println("Entra: Batman");
             screen.showImage("img/batman1.png");
@@ -38,7 +38,7 @@ public class Concert {
             it=1;
             while(it<=5){
                 it++;
-                changeBackgroundWithMusic(screen);
+                changeRenderWithMusic(screen);
             }
             screen.showImage("img/batman2.jpeg");
 
@@ -48,7 +48,7 @@ public class Concert {
             e.printStackTrace();
         }
     }
-    public static void changeBackgroundWithMusic(Screen screen) throws InterruptedException {screen.setBackground(Colors.black);
+    public static void changeRenderWithMusic(Screen screen) throws InterruptedException {screen.setBackground(Colors.black);
         screen.showImage("img/drums_1.png"); // 0
         Thread.sleep(100);
         screen.cls();
