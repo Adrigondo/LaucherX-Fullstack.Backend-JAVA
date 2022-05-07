@@ -1,4 +1,4 @@
-package Week2_11_04_22.Concert;
+package Week2_11_04_22;
 
 import imonsh.*;
 import javax.sound.sampled.*;
@@ -9,7 +9,7 @@ public class Concert {
     public static void main(String[] args) throws UnsupportedAudioFileException, LineUnavailableException, IOException {
         Screen screen = new Screen("Concierto 'Something in the way'");
         Dialog dialog = new Dialog();
-        Audio music = new Audio();
+        Audio music = new Audio("Something in the dark.wav");
         screen.setVisible(true);
 
         String input=dialog.readString("¿Comenzamos? s/n");
@@ -73,26 +73,5 @@ public class Concert {
         Thread.sleep(100);
         screen.cls();
         Thread.sleep(950); // 4547
-    }
-}
-
-class Audio {
-    public void play() throws NullPointerException, IOException, UnsupportedAudioFileException, LineUnavailableException {
-        String fileName="audio/Something in the dark.wav";
-        // System.out.println(fileName);
-
-        File fileAudio=new File(fileName);
-        System.out.println(fileAudio);
-        System.out.println(fileAudio.getName());
-        AudioInputStream audioStream=AudioSystem.getAudioInputStream(fileAudio);
-        Clip clip=AudioSystem.getClip();
-        clip.open(audioStream);
-
-        clip.start();
-    }
-
-    public static void main(String[] args) throws UnsupportedAudioFileException, LineUnavailableException, IOException {
-        Audio music = new Audio();
-        music.play();
     }
 }
